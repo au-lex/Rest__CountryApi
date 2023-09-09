@@ -30,26 +30,31 @@ function CtryDetail() {
     fetchCountry();
   }, [code]);
 
-  if (!country) return <div>Loading...</div>;
+  if (!country) return <div><div className=' loader' >
+                    
+  <div className='w-[1.2rem] h-[1.2rem] rounded-full bg-slate-500'> </div>
+  <div className='w-[1.2rem] h-[1.2rem] rounded-full bg-slate-500'> </div>
+  <div className='w-[1.2rem] h-[1.2rem] rounded-full bg-slate-500'> </div>
+ </div></div>;
 
   const nativeName = Object.values(country.name.nativeName)[0].common;
   const currencies = Object.values(country.currencies).map(currency => currency.name).join(', ');
   const languages = Object.values(country.languages).join(', ');
 
   return (
-    <main className={`${isDarkMode ? 'darkmood' : ''}`}>
+    <main className={`${isDarkMode ? 'darkmood' : ''} `}>
       <div className='bg1 h-[120] absolute right-0 left-0 top-0 z-30 pt-24'>
-        <Link to={"/"} className='my-4 bg1 border cursor-pointer  px-2 block ml-4
+        <Link to={"/"} className='my-4 bg1  cursor-pointer  sh ml-[2rem] block 
          w-[20%] text-center lg:w-[10%]'>back</Link>
 
-        <figure className='pb-[2.8rem] bg1 mb-6 w-[100%] lg:my-[2rem] mt-[2rem] lg:flex lg:justify-around '>
-          <div className="imageContainer flex justify-center">
+        <figure className='pb-[2.8rem] bg1 mb-6 w-[100%]  px-[1.2rem] lg:my-[2rem] mt-[2rem] lg:flex lg:justify-around '>
+          <div className="imageContainer flex justify-center sh">
             <img src={country.flags.png} alt="flag"
              className='rounded-lg object-cover w-[342px] h-[220px] lg:w-[500px] lg:h-[320px]' />
           </div>
          <section>
           <section className='lg:flex lg:space-x-20'>
-          <figcaption className='px-4 mb-[2rem]'>
+          <figcaption className='px-4 mb-[2rem] sh'>
             
                 <h1 className="ctryName bg capitalize text-[2.3rem] w-[80%] lg:w-[100%] font-bold mt-8">{country.name.common}</h1>
                 <h3 className="ctryDesc capitalize bg text-[20px] font-semibold mt-2">
@@ -68,7 +73,7 @@ function CtryDetail() {
                     capital: <span className='font-light'>{country.capital}</span>
                 </h3>
             </figcaption>
-          <figcaption className='px-4 lg:pt-[4rem]  '>
+          <figcaption className='px-4 lg:pt-[4rem]  sh'>
            
           
             <h3 className="ctryDesc capitalize text-light bg text-[20px] font-semibold mt-1">
@@ -92,7 +97,7 @@ function CtryDetail() {
           </h3>
           <div className='flex  flex-wrap lg:flex-nowrap'>
             {borderCountries.map(countryName => (
-              <li key={countryName} className='my-4 bg1 border cursor-pointer 
+              <li key={countryName} className='my-4 bg1 sh cursor-pointer 
                px-2 py-2 block ml-4 w-[30%]  lg:w-[8rem]  text-center'>
                 {countryName}
               </li>

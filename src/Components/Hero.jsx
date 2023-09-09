@@ -53,7 +53,7 @@ const Hero = ({ searchTerm, selectedRegion }) => {
                     {filteredCountries.map((country) => (
                         <div key={country.cca3}>
 
-<figure className=' shadow-lg rounded-lg pb-[2.8rem] bg1 mb-6 w-[95%] h-[26rem] lg:my-[2rem] '>
+<figure className='  sh rounded-lg pb-[2.8rem] bg1 mb-[4rem] w-[95%] h-[26rem] lg:my-[2rem] '>
 <Link to={`/country/${country.cca3}`} key={country.cca3} className="imageContainer">
                 <img src={country.flags.png} alt="flag" className=' rounded-lg object-cover w-[342px] h-[220px]' />
             </Link>

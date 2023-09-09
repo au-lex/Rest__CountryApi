@@ -4,8 +4,9 @@
 
 :root {
   --VeryLightGray: hsl(0, 0%, 98%);
-  --VeryDarkBlue: hsl(207, 26%, 17%);
-  --VeryDarkBlue2:hsl(207, 26%, 19%);
+  --VeryDarkBlue: hsl(207, 26%, 20%);
+  --VeryDarkBlue2:hsl(207, 26%, 15%);
+  /* --VeryDarkBlue2: */
   --bg:hsl(207, 26%, 18%);
   --bgg:hsl(209, 85%, 46%);
   --bc:hsl(0, 0%, 98%);
@@ -65,7 +66,7 @@ body {
   opacity: 0;
 
   position: absolute;
-  z-index: 100000;
+  /* z-index: 100000; */
   width: 95%;
 
 }
@@ -76,6 +77,20 @@ opacity: 1;
 
 
 
-
+.sh {
+  /* background-color: #f5f1ea; */
+  /* width: 100px; */
+  /* height: 100px; */
+  border-radius: 5%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 4px rgba(78, 77, 77, 0.2);
+  }
+  
+  .background-button {
+  background-color: #b69c6d;
+  width: 100px;
+  height: 100px;
+  border-radius: 25%;
+  box-shadow: 25px 25px 50px rgba(0, 0, 0, 0.3), -25px -25px 50px rgba(255, 255, 255, 0.3);
+  }
  
 
