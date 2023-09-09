@@ -43,7 +43,7 @@ import Darkmood from './Darkmood';
     <main className={` 
    ${isDarkMode? 'darkmood' : ''}  `}>
 
- <section   className="shadow-md py-6 flex justify-between px-4  z-40 bg1 fixed w-full
+ <section   className="sh py-6 flex justify-between px-4  z-50 bg1 fixed w-full
   ">
     <h1 className=' text-[18px] bg'>Where in the world</h1>
     <div className="logo bg " onClick={() => setIsDarkMode(prev => !prev)}>
@@ -79,8 +79,8 @@ placeholder="Search for anything..." type="search" name="search"  />
                 {openDropDown && (
                     <section className={`dropdown_content   ${openDropDown ? "open" : ""}`}>
                     
-                        <div className='w-[60%] drop_container  absolute mt-5 bg1  h-[12rem] lg:w-[20rem] 
-                        rounded-[8px] shadow-lg'>
+                        <div className='w-[60%] drop_container z-30 absolute mt-5 bg1  h-[12rem] lg:w-[20rem] 
+                        rounded-[8px] sh'>
                             {["africa",  "asia", "europe", "oceania"].map(region => (
                                 <li key={region} className=' list-none text-[18px]  
                                 cursor-pointer capitalize pt-4 ml-4'
