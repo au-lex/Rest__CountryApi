@@ -39,7 +39,12 @@ const Hero = ({ searchTerm, selectedRegion }) => {
 
         <div className="">
             {isLoading ? (
-                <p className='bg' >Loading...</p>
+                <div className=' loader' >
+                    
+                    <div className='w-[1.2rem] h-[1.2rem] rounded-full bg-slate-500'> </div>
+                    <div className='w-[1.2rem] h-[1.2rem] rounded-full bg-slate-500'> </div>
+                    <div className='w-[1.2rem] h-[1.2rem] rounded-full bg-slate-500'> </div>
+                   </div>
             ) : (
                 <div 
                 
@@ -50,7 +55,7 @@ const Hero = ({ searchTerm, selectedRegion }) => {
 
 <figure className=' shadow-lg rounded-lg pb-[2.8rem] bg1 mb-6 w-[95%] h-[26rem] lg:my-[2rem] '>
 <Link to={`/country/${country.cca3}`} key={country.cca3} className="imageContainer">
-                <img src={country.flags.png} alt="flag" className=' rounded-lg object-cover w-[352px] h-[220px]' />
+                <img src={country.flags.png} alt="flag" className=' rounded-lg object-cover w-[342px] h-[220px]' />
             </Link>
             <figcaption className='px-4'>
                 <h1 className="ctryName bg capitalize text-[1.3rem] w-[80%] font-bold mt-2">{country.name.common}</h1>

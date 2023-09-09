@@ -9,8 +9,10 @@
   --bg:hsl(207, 26%, 18%);
   --bgg:hsl(209, 85%, 46%);
   --bc:hsl(0, 0%, 98%);
-  
   --mainbg:hsl(0, 0%, 98%);
+  
+
+
 }
 
 .darkmood {
@@ -20,6 +22,8 @@
   --mainbg:var(--VeryLightGray) ;
   --bg:var(--VeryLightGray) ;
   --bc:var(--VeryDarkBlue) ;
+   
+
   
 }
 
@@ -29,25 +33,30 @@ body {
   background-color: var(--mainbg);
   overflow-x: hidden;
   color:var(--VeryDarkBlue);
-  /* transition: .6s ease-in-out; */
+  
+
+}
+
+.loader {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @apply font-bold  space-x-4   animate-bounce delay-300
 }
 
 
-/* 
-.bg1 {
-  background-color: var(--bgg);
-  color: var(--VeryLightGray);
-} */
 
 
 .bg1 {
   
   color: var(--bg);
   background-color: var(--bc);
+ 
 }
 
 .bor {
-  border: 1px solid rgb(155, 157, 161);
+  border: .2px solid rgb(155, 157, 161);
 }
 
 
@@ -64,3 +73,9 @@ body {
 .dropdown_content.open {
 opacity: 1;
 }
+
+
+
+
+ 
+

@@ -41,9 +41,9 @@ import Darkmood from './Darkmood';
     <>
 
     <main className={` 
-   ${isDarkMode? 'darkmood' : ''}`}>
+   ${isDarkMode? 'darkmood' : ''}  `}>
 
- <section   className="shadow-md py-6 flex justify-between px-4  bg1
+ <section   className="shadow-md py-6 flex justify-between px-4  z-40 bg1 fixed w-full
   ">
     <h1 className=' text-[18px] bg'>Where in the world</h1>
     <div className="logo bg " onClick={() => setIsDarkMode(prev => !prev)}>
@@ -53,8 +53,8 @@ import Darkmood from './Darkmood';
 
  
 
-<section className='px-3 py-6 lg:flex justify-between lg:px-12'>
-  <div className='relative my-4'> 
+<section className='px-3 py-6 lg:flex justify-between lg:px-12 pt-[6rem]'>
+  <div className='relative my-4 '> 
     <span class="absolute inset-y-0 left-0 flex items-center pl-2">
       <i class="ri-search-line"></i></span>
 
