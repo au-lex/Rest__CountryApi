@@ -54,7 +54,7 @@ import Darkmood from './Darkmood';
  
 
 <section className='px-3 py-6 lg:flex justify-between lg:px-12 pt-[6rem]'>
-  <div className='relative my-4 '> 
+  <div className='relative my-4 sh'> 
     <span class="absolute inset-y-0 left-0 flex items-center pl-2">
       <i class="ri-search-line"></i></span>
 
@@ -71,7 +71,7 @@ placeholder="Search for anything..." type="search" name="search"  />
 
 
 <section className='dropDown'>
-                 <div onClick={openDROP} className='w-[60%] lg:w-[20rem] bor bg1 shadow-md h-[3.5rem] 
+                 <div onClick={openDROP} className='w-[60%] lg:w-[20rem] bor bg1 sh h-[3.5rem] 
                 py-4  cursor-pointer  relative pl-5  rounded-[8px] bg'>
                     {selectedRegion || "Filter by Region"}
                     <span className=' text-[30px]    right-3 absolute top-2'><i class="ri-arrow-drop-down-line"></i></span>
