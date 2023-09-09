@@ -81,16 +81,10 @@ opacity: 1;
   /* background-color: #f5f1ea; */
   /* width: 100px; */
   /* height: 100px; */
-  border-radius: 5%;
+  border-radius: 5px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 4px rgba(78, 77, 77, 0.2);
   }
   
-  .background-button {
-  background-color: #b69c6d;
-  width: 100px;
-  height: 100px;
-  border-radius: 25%;
-  box-shadow: 25px 25px 50px rgba(0, 0, 0, 0.3), -25px -25px 50px rgba(255, 255, 255, 0.3);
-  }
+  
  
 

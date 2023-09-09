@@ -50,11 +50,11 @@ function CtryDetail() {
         <figure className='pb-[2.8rem] bg1 mb-6 w-[100%]  px-[1.2rem] lg:my-[2rem] mt-[2rem] lg:flex lg:justify-around '>
           <div className="imageContainer flex justify-center sh">
             <img src={country.flags.png} alt="flag"
-             className='rounded-lg object-cover w-[342px] h-[220px] lg:w-[500px] lg:h-[320px]' />
+             className='rounded-lg object-cover w-[355px] h-[290px] lg:w-[500px] lg:h-[320px]' />
           </div>
          <section>
           <section className='lg:flex lg:space-x-20'>
-          <figcaption className='px-4 mb-[2rem] sh'>
+          <figcaption className='px-4 mb-[2rem] sh h-[16rem]'>
             
                 <h1 className="ctryName bg capitalize text-[2.3rem] w-[80%] lg:w-[100%] font-bold mt-8">{country.name.common}</h1>
                 <h3 className="ctryDesc capitalize bg text-[20px] font-semibold mt-2">
@@ -73,7 +73,7 @@ function CtryDetail() {
                     capital: <span className='font-light'>{country.capital}</span>
                 </h3>
             </figcaption>
-          <figcaption className='px-4 lg:pt-[4rem]  sh'>
+          <figcaption className='px-4 lg:pt-[4rem] h-[8rem] py-3  sh'>
            
           
             <h3 className="ctryDesc capitalize text-light bg text-[20px] font-semibold mt-1">
