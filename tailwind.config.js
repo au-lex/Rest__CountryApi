@@ -6,14 +6,9 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundColor: {
-        'light': 'var(--VeryLightGray)',
-        'dark': 'var(--VeryDarkBlue)',
-      },
-      textColor: {
-        'light': 'var(--VeryLightGray)',
-        'dark': 'var(--VeryDarkBlue)',
-      }
+     
+
+    
     }
   },
   
